@@ -5,7 +5,7 @@ import Star from "./Star.js";
 export default function Stars(props) {
   const { count } = props;
   if (!Number(count) || count < 1 || count > 5) {
-    return false;
+    return null;
   }
 
   const listStars = [];
